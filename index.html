@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>My Task</h1>
+    </div>
+    
+    <div class="input-container">
+      <div>
+        <p>Task Title</p>
+        <input type="text" class="input-keyword" placeholder="Add new task"/>
+        
+        <p>Details (optional)</p>
+        <input type="text" class="input-opt" placeholder="Details for task title"/>
+      </div>
+
+      <div class="option">
+        <div class="input-priority">
+          <p>Priority</p>
+          <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select> 
+        </div>
+        <div class="input-deadline">
+          <p>Deadline</p>
+          <input type="date" class="due-date" />
+        </div>
+      </div>
+      
+      <div class="button">
+        <button class="button-input">Add task</button>
+        <button class="button-cancel" >Calcel</button>
+      </div>
+    </div>
+
+    <div class="edit-container">
+      
+    </div>
+    
+    <div class="list-container">
+      <div class="empty hidden">
+        <h4>No tasks found</h4>
+        <p>Click the + button to get started</p>
+      </div>
+      <div class="list-item">
+   
+      </div>
+    </div>
+
+    <div class="button-container">
+      <p class="button-add">+</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

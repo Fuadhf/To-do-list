@@ -1,0 +1,205 @@
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+body {
+    font-family: cursive;
+    background: wheat;
+}
+
+.header{
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.input-container, .edit-container{
+    outline: 2px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: wheat;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 999;
+    transition: fadeIn 0.5s ease;
+}
+
+input, select{
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 4px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(66, 68, 90, 1);
+}
+
+.option, .edit-option {
+  display: flex;
+  gap: 10px;
+  margin-top: -10px;
+
+}
+
+.input-priority,
+.input-deadline,.edit-priority,
+.edit-deadline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.empty{
+    text-align: center;
+    border: 4px solid black;
+    height: 100px;
+    padding-top: 6px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(66, 68, 90, 1);
+    transition: fadeIn 0.5s ease;
+    background-color: blanchedalmond;
+}
+
+.button-add{
+    position: fixed;
+    font-size: 60px;
+    bottom: 0;
+    right: 40px;
+    background-color:coral;   
+    text-align: center;
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 49px;
+    border: 4px solid black;
+    box-shadow: 5px 5px rgba(66, 68, 90, 1);
+}
+
+.button-add:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button-add:active{
+    transform: scale(0.95);
+}
+
+.button-input,.button-save{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(66, 68, 90, 1);
+}
+
+.button-input:active{
+    transform: scale(0.95);
+}
+
+.button-save:active{
+    transform: scale(0.95);
+}
+
+.button-cancel,.button-edit-cancel{
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(66, 68, 90, 1);
+}
+
+.button-cancel:active{
+    transform: scale(0.95);
+}
+
+.button-edit-cancel:active{
+    transform: scale(0.95);
+}
+
+.button-add, button, input, select{
+    transition: all 0.3s ease;
+}
+
+.card{
+    border: 4px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(66, 68, 90, 1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    display: block;
+    transition: transform 0.2s ease,box-shadow 0.2s ease;
+}
+
+img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.bottom{
+    display: flex;
+    padding: 0 10px;
+    margin-top: -20px;
+}
+
+.title{
+    flex: 1;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+.priority{
+    padding: 4px 10px;
+    background-color:limegreen;
+    color:floralwhite;
+}
+
+.edit{
+    width: 25px;
+}
+
+.drop{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.check-list{
+    width: 25px;
+}
+
+.priority, .deadline{
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 15px;
+}
+
+.opt{
+    font-style: italic;
+    padding: 0 10px;
+    display: block;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    text-decoration: dotted;
+}
+.show{
+    display: none;
+    transition: fadeIn 0.5s ease;
+}
